@@ -1,0 +1,56 @@
+/* Academic augmentations - small, neutral overrides to the HTML5 UP theme */
+
+/* Tweak header/logo area */
+#header {
+  text-align: left;
+  padding: 1.25rem 2rem;
+}
+
+#header .logo img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 8px;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+#header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+#header p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Navigation - make it clearer and persistent */
+#nav ul { display: flex; gap: 0.75rem; padding: 0.5rem 2rem; }
+#nav ul li a { padding: 0.5rem 0.75rem; border-radius: 6px; }
+#nav ul li a.active, #nav ul li a:hover { background: rgba(255,255,255,0.06); }
+
+/* Main content spacing */
+#main { padding: 2rem; }
+.main .major h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+/* Footer - neutral and academic */
+#footer { background: rgba(0,0,0,0.06); padding: 1.5rem 2rem; }
+#footer h2 { font-size: 1rem; }
+#footer .icons { margin-top: 0.5rem; }
+#footer p.copyright { text-align: center; margin-top: 1rem; opacity: 0.85; }
+
+/* Make lists in research and publications easier to read */
+#research ul, #pubs ul { list-style: none; padding-left: 0; }
+#research ul li, #pubs ul li { margin-bottom: 0.75rem; line-height: 1.4; }
+
+/* Responsive adjustments */
+@media screen and (max-width: 736px) {
+  #header .logo img { width: 64px; height: 64px; }
+  #nav ul { flex-wrap: wrap; }
+  #main { padding: 1rem; }
+}
